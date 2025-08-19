@@ -1,0 +1,117 @@
+/* Base Layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    background-color: #e5ddd5;
+}
+ 
+/* Sidebar (Contacts) */
+#contacts {
+    width: 30%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+}
+ 
+/* Contact Item */
+#contacts div {
+    padding: 15px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+ 
+#contacts div:hover {
+    background-color: #f5f5f5;
+}
+ 
+/* Main Chat Area */
+#chat {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5ddd5;
+    position: relative;
+}
+ 
+/* Chat Header */
+#chat-header {
+    background-color: #f0f0f0;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+ 
+/* Chat Messages Box */
+#chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://i.ibb.co/K6wk4PP/whatsapp-bg.png'); /* WhatsApp background */
+    background-size: cover;
+}
+ 
+/* Message Bubbles */
+#chat-box .you {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 8px 0 8px 8px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+ 
+#chat-box .them {
+    align-self: flex-start;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 0 8px 8px 8px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+ 
+/* Input and Send */
+.chat-input-container {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+}
+ 
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+ 
+#send-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+ 
+#send-btn:hover {
+    background-color: #1ebc5b;
+}
+ 
